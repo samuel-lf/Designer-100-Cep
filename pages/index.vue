@@ -7,9 +7,3 @@ export default {
 
 }
 </script>
-
-<style lang="scss">
-  .red {
-    color: red;
-  }
-</style>
