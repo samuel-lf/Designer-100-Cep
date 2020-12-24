@@ -1,0 +1,55 @@
+.author {
+  margin-top: 50px;
+  padding: 0 30px;
+  background-color: #151456;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #E5490C;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.containerBlocks {
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 700px){
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.blockImage {
+  & .image {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.blockText {
+  max-width: 300px;
+  margin-left: 20px;
+  & .title {
+    font-weight: 300;
+    color: #FFF;
+    text-transform: initial;
+    text-align: initial;
+    font-size: 20px;
+    @media screen and (max-width: 700px){
+      padding: 0;
+    }
+    & .contrast {
+      color: #E5490C;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 28px;
+    }
+  }
+
+  & .text {
+    color: #FFF;
+    font-weight: normal;
+  }
+}
