@@ -29,6 +29,7 @@ export default {
   ],
 
   modules: [
+    '@nuxtjs/svg',
     'nuxt-webfontloader',
     '@nuxtjs/axios'
   ],

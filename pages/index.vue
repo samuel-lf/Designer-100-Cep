@@ -1,9 +1,12 @@
 <template>
   <div>
-    <Banner />
-    <InfosCampaign />
-    <Author />
-    <InfosLessonDates />
+    <main>
+      <Banner />
+      <InfosCampaign />
+      <Author />
+      <InfosLessonDates />
+    </main>
+    <Footer />
   </div>
 </template>
 
@@ -12,12 +15,14 @@ import Banner from '@/components/Sections/Banner'
 import InfosCampaign from '@/components/Sections/InfosCampaign'
 import Author from '@/components/Sections/Author'
 import InfosLessonDates from '@/components/Sections/InfosLessonDates'
+import Footer from '@/components/Sections/Footer'
 export default {
   components: {
     Banner,
     InfosCampaign,
     Author,
-    InfosLessonDates
+    InfosLessonDates,
+    Footer
   }
 }
 </script>
