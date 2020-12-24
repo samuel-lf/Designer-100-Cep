@@ -1,9 +1,9 @@
 export default {
   target: 'static',
-  htmlAttrs: {
-    lang: 'pt-BR'
-  },
   head: {
+    htmlAttrs: {
+      lang: 'pt-BR'
+    },
     title: 'Designer 100 cep',
     meta: [
       { charset: 'utf-8' },
