@@ -1,20 +1,48 @@
-# designer_sem_cep
+<div align="center">
+  <img alt="Logo" title="#logo" width="100%" src="./assets/images/logoForGithub.png">
+</div>
 
-## Build Setup
+<a id="sobre"></a>
 
-```bash
-# install dependencies
+## :book: Sobre
+
+**Designer 100 CEP** é uma LP de um evento que busca trazer conhecimentos para as pessoas sobre o marketing digital.
+
+<a id="tecnologias-utilizadas"></a>
+
+## :rocket: Tecnologias Utilizadas
+
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+- [NuxtS](https://nuxtjs.org/)
+
+<a id="como-usar"></a>
+
+## :fire: Como Usar
+
+### Pré-requisitos
+
+- [Node.js](https://nodejs.org/);
+- [NPM](https://www.npmjs.com/get-npm) ou [Yarn](https://classic.yarnpkg.com/pt-BR/docs/install/);
+
+
+1.  Faça um clone:
+
+2. Executando o projeto:
+
+```
+# Instale as dependências
 $ npm install
 
-# serve with hot reload at localhost:3000
+# Inicie a aplicação web
 $ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+3. Executando o build do projeto:
+
+```
+# Execute o comando
+$ npm run generate
+
+# A pasta dist será gerada
+```
