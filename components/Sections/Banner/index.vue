@@ -2,7 +2,7 @@
   <section class="banner">
     <div class="containerBlocks">
       <div class="blockImage">
-        <img class="image" src="../../../assets/images/logoCampaign.svg" alt="">
+        <img class="image" src="../../../assets/images/logoCampaign.svg" alt="Logo do evento Designer 100 cep">
         <p class="text">
           17 à 20 de janeiro
         </p>

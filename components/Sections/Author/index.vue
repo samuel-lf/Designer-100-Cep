@@ -5,7 +5,7 @@
     </h1>
     <div class="containerBlocks">
       <div class="blockImage">
-        <img class="image" src="../../../assets/images/fotoAuthor.png" alt="">
+        <img class="image" src="../../../assets/images/fotoAuthor.png" alt="Foto do Willian Leite">
       </div>
       <div class="blockText">
         <p class="title">
