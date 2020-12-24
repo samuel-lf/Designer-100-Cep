@@ -1,6 +1,9 @@
 .banner {
   background-color: #151456;
   height: 100vh;
+  @media screen and (max-width:360px){
+    height: 130vh
+  }
 }
 
 .containerBlocks{
