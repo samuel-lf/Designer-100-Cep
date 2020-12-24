@@ -1,0 +1,116 @@
+.banner {
+  background-color: #151456;
+  height: 100vh;
+}
+
+.containerBlocks{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 30px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 900px){
+    grid-template-columns: 1fr;
+  }
+}
+
+.blockImage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & .text {
+    color: #E5490C;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 0;
+    @media screen and (max-width: 900px){
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  & .image {
+    width: 100%;
+    @media screen and (max-width: 900px){
+      max-width: 400px;
+    }
+  }
+}
+
+.blockForm{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 900px){
+    align-self: baseline;
+  }
+  & .text {
+    color: #FFF;
+    font-weight: bold;
+    max-width: 600px;
+    font-size: 26px;
+    @media screen and (max-width: 900px){
+      font-size: 20px;
+      text-align: center;
+      margin: 5px 0 10px 0
+    }
+    @media screen and (max-width: 510px){
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    & .contrast {
+      color: #E5490C;
+      font-weight: bold;
+    }
+  }
+
+  & .card {
+    box-shadow: 0 6px 15px 2px rgba(0,0,0,.1);
+    background: #FFF;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 3px;
+    @media screen and (max-width: 900px){
+      padding: 10px;
+    }
+    & > .text {
+      color: #000;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      font-size: 14px;
+      & .contrast {
+        color: #E5490C;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      & .input {
+        margin: 5px 0;
+        height: 25px;
+        border-radius: 3px;
+        padding: 5px;
+        border: 2px solid #E5490C;
+      }
+      & .btnSubmit {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #FFF;
+        background: linear-gradient(180deg, rgba(254,78,0,1) 22%, rgba(255,68,31,1) 90%);
+        border: none;
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    }
+
+  }
+}
