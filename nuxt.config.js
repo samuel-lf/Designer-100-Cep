@@ -34,7 +34,7 @@ export default {
   ],
   webfontloader: {
     google: {
-      families: ['Montserrat:300,400,700']
+      families: ['Montserrat:400,600,700,900']
     }
   },
 

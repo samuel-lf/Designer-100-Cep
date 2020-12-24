@@ -1,0 +1,35 @@
+.container {
+  margin-top: 50px;
+  padding: 0 30px;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #E5490C;
+  text-align: center;
+  font-weight: 600;
+
+  & strong {
+    font-weight: 900;
+  }
+}
+
+.containerDescription {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  & .description {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 100px 1fr;
+    max-width: 600px;
+    & .image{
+      max-width: 150px;
+    }
+    & .text{
+      font-size: 18px;
+    }
+  }
+}
