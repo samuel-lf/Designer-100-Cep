@@ -94,6 +94,9 @@
     .form {
       display: flex;
       flex-direction: column;
+      & .label {
+        display: none;
+      }
       & .input {
         margin: 5px 0;
         height: 25px;

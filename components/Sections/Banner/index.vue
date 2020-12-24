@@ -21,9 +21,9 @@
           <form class="form">
             <label for="nome" class="label">Nome</label>
             <input id="nome" type="text" placeholder="Digite seu nome" class="input">
-            <label for="email" class="label">Nome</label>
+            <label for="email" class="label">E-mail</label>
             <input id="email" type="email" placeholder="Digite seu e-mail" class="input">
-            <label for="whatsapp" class="label">Nome</label>
+            <label for="whatsapp" class="label">Whatsapp</label>
             <input id="whatsapp" type="text" placeholder="Digite seu whatsapp" class="input">
             <button class="btnSubmit">
               Iniciar minha jornada
