@@ -19,9 +19,12 @@
             <span class="contrast">jornada designer 100 cep</span>
           </p>
           <form class="form">
-            <input type="text" placeholder="Digite seu nome" class="input">
-            <input type="tet" placeholder="Digite seu e-mail" class="input">
-            <input type="text" placeholder="Digite seu whatsapp" class="input">
+            <label for="nome" class="label">Nome</label>
+            <input id="nome" type="text" placeholder="Digite seu nome" class="input">
+            <label for="email" class="label">Nome</label>
+            <input id="email" type="email" placeholder="Digite seu e-mail" class="input">
+            <label for="whatsapp" class="label">Nome</label>
+            <input id="whatsapp" type="text" placeholder="Digite seu whatsapp" class="input">
             <button class="btnSubmit">
               Iniciar minha jornada
             </button>
