@@ -20,11 +20,11 @@
           </p>
           <form class="form">
             <label for="nome" class="label">Nome</label>
-            <input id="nome" type="text" placeholder="Digite seu nome" class="input">
+            <input id="nome" type="text" aria-labelledby="Nome" placeholder="Digite seu nome" class="input">
             <label for="email" class="label">E-mail</label>
-            <input id="email" type="email" placeholder="Digite seu e-mail" class="input">
+            <input id="email" type="email" aria-labelledby="E-mail" placeholder="Digite seu e-mail" class="input">
             <label for="whatsapp" class="label">Whatsapp</label>
-            <input id="whatsapp" type="text" placeholder="Digite seu whatsapp" class="input">
+            <input id="whatsapp" type="text" aria-labelledby="Whatsapp" placeholder="Digite seu whatsapp" class="input">
             <button class="btnSubmit">
               Iniciar minha jornada
             </button>
