@@ -1,0 +1,83 @@
+.container {
+  margin-top: 0;
+  padding: 0 30px;
+  background-color: #E5490C;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #151456;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 50px;
+  margin: 0;
+
+  & strong {
+    font-weight: 900;
+  }
+}
+
+.descriptionSection {
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.containerLessons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  & .containerTitle {
+    width: 100%;
+    max-width: 700px;
+    background-color: #151456;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    & .titleSection {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #FFF;
+      max-width: 800px;
+      width: 100%;
+    }
+  }
+  .lesson {
+    display: grid;
+    grid-template-columns: 100px minmax(300px, 600px);
+    margin-bottom: 20px;
+    @media screen and (max-width: 450px){
+      grid-template-columns: 1fr;
+    }
+    & .lessonNumber{
+      border-radius: 30px;
+      border: 2px dotted #FFF;
+      text-align: center;
+      font-weight: bold;
+      color: #FFF;
+      padding: 8px 0;
+      margin-right: 10px;
+      align-self: center;
+      @media screen and (max-width: 450px){
+        width: 50%;
+        justify-self: center;
+        margin-bottom: 20px;
+      }
+    }
+    & .lessonDescription{
+      border-radius: 30px;
+      text-align: center;
+      font-weight: 900;
+      color: #151456;
+      padding: 10px;
+      margin-right: 10px;
+      background-color: #FFF;
+      text-transform: uppercase;
+    }
+  }
+}
