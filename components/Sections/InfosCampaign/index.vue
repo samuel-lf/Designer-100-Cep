@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <section class="container">
     <h1 class="title">
       A <strong>Jornada Designer 100 cep</strong> é para:
     </h1>
@@ -30,7 +30,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
