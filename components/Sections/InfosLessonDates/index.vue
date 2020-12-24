@@ -98,32 +98,9 @@
       </div>
     </div>
 
-    <!-- <div class="containerDescription">
-      <div class="description">
-        <img class="image" src="../../../assets/images/circleRight.svg" alt="">
-        <p class="text">
-          Designers que querem aumentar seu faturamento através da internet
-        </p>
-      </div>
-      <div class="description">
-        <img class="image" src="../../../assets/images/circleRight.svg" alt="">
-        <p class="text">
-          Designers que querem aprender a utilizar o com Marketing Digital e não depender de um trabalho formal.
-        </p>
-      </div>
-      <div class="description">
-        <img class="image" src="../../../assets/images/circleRight.svg" alt="">
-        <p class="text">
-          Designers que já trabalham com Marketing Digital e querem descobrir como conseguir mais clientes lucrativos.
-        </p>
-      </div>
-      <div class="description">
-        <img class="image" src="../../../assets/images/circleRight.svg" alt="">
-        <p class="text">
-          Designers que querem trabalhar de casa através da internet.
-        </p>
-      </div>
-    </div> -->
+    <p class="attetion">
+      *SÓ TERÁ ACESSO AOS CONTEÚDOS GRAVADOS APENAS QUEM REALIZAR A INSCRIÇÃO NO EVENTO "JORNADA DESIGNER SEM CEP"
+    </p>
   </section>
 </template>
 
