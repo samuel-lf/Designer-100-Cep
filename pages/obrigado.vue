@@ -1,16 +1,19 @@
 <template>
   <div>
     <Attetion />
+    <Group />
     <Footer />
   </div>
 </template>
 
 <script>
-import Footer from '@/components/IndexSections/Footer'
 import Attetion from '@/components/ThankSections/Attetion'
+import Group from '@/components/ThankSections/Group'
+import Footer from '@/components/IndexSections/Footer'
 export default {
   components: {
     Attetion,
+    Group,
     Footer
   }
 }
