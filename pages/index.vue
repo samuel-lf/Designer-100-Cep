@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import Banner from '@/components/Sections/Banner'
-import InfosCampaign from '@/components/Sections/InfosCampaign'
-import Author from '@/components/Sections/Author'
-import InfosLessonDates from '@/components/Sections/InfosLessonDates'
-import Footer from '@/components/Sections/Footer'
+import Banner from '@/components/IndexSections/Banner'
+import InfosCampaign from '@/components/IndexSections/InfosCampaign'
+import Author from '@/components/IndexSections/Author'
+import InfosLessonDates from '@/components/IndexSections/InfosLessonDates'
+import Footer from '@/components/IndexSections/Footer'
 export default {
   components: {
     Banner,
