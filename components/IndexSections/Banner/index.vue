@@ -18,8 +18,8 @@
             Cadastre-se gratuitamente para acompanhar a
             <span class="contrast">jornada designer 100 cep</span>
           </p>
-          <form class="form" @submit="teste">
-            <label for="" class="label">Nome</label>
+          <form class="form" @submit="sendNewsletter">
+            <label for="mce-FNAME" class="label">Nome</label>
             <input
               id="mce-FNAME"
               v-model="name"
@@ -41,6 +41,7 @@
             <input
               id="mce-PHONE"
               v-model="phone"
+              v-mask="'(##)#########'"
               type="text"
               aria-labelledby="whatsapp"
               placeholder="Digite seu whatsapp"
@@ -61,8 +62,10 @@
 
 <script>
 import { jsonp } from 'vue-jsonp'
+import { mask } from 'vue-the-mask'
 
 export default {
+  directives: { mask },
   data () {
     return {
       url: 'https://hotmail.us7.list-manage.com/subscribe/post?u=7695a95429c1243e974fd9e6e&amp;id=716944aa2a',
@@ -72,8 +75,9 @@ export default {
     }
   },
   methods: {
-    teste (e) {
+    sendNewsletter (e) {
       e.preventDefault()
+      this.phone = this.phone.replace('(', '').replace(')', '')
       const urlRequest = this.makeUrl()
       jsonp(`${urlRequest}`, {
         callbackQuery: 'c',
