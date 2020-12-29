@@ -10,6 +10,9 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Ei, Designer! Descubra como você pode conquistar o faturamento de 3 a 5 mil reais por mês utilizando o Marketing Digital.' }
     ],
+    script: [
+      { src: 'pixel.js', type: 'text/javascript' }
+    ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
