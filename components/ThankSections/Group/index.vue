@@ -10,7 +10,7 @@
     </p>
 
     <div class="containerBtn">
-      <button class="btnGroup">
+      <button class="btnGroup" @click="openGroup">
         Quero entrar no grupo exclusivo
       </button>
     </div>
@@ -24,7 +24,15 @@
 
 <script>
 export default {
-
+  methods: {
+    openGroup () {
+      const urls = [
+        'https://chat.whatsapp.com/DJfqdsnDV438Gy7JH7pYyl'
+      ]
+      const random = Math.floor(Math.random() * urls.length)
+      window.open(`${urls[random]}`, 'blank')
+    }
+  }
 }
 </script>
 
