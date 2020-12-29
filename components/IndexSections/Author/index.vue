@@ -19,14 +19,20 @@
         <p class="text">
           Hoje, seu papel na comunidade é fomentar o design como ferramenta de qualidade de vida e fornecer ferramentas e processos para Designer iniciantes e experientes fazerem do design sua principal fonte de renda e conquistar o faturamento de 5k mês.
         </p>
+        <a href="https://www.instagram.com/owillianleite/" target="blank" aria-label="Instagram">
+          <Instagram />
+        </a>
       </div>
     </div>
   </section>
 </template>
 
 <script>
+import Instagram from '~/assets/images/instagram.svg?inline'
 export default {
-
+  components: {
+    Instagram
+  }
 }
 </script>
 
