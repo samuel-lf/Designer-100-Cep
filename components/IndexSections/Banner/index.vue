@@ -68,7 +68,7 @@ export default {
   directives: { mask },
   data () {
     return {
-      url: 'https://hotmail.us7.list-manage.com/subscribe/post?u=7695a95429c1243e974fd9e6e&amp;id=716944aa2a',
+      url: 'https://willianleite.us7.list-manage.com/subscribe/post?u=6aad987a683c60bd65de47bc8&amp;id=39bb800807',
       name: '',
       email: '',
       phone: ''
