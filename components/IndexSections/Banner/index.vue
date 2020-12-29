@@ -18,14 +18,35 @@
             Cadastre-se gratuitamente para acompanhar a
             <span class="contrast">jornada designer 100 cep</span>
           </p>
-          <form class="form">
-            <label for="nome" class="label">Nome</label>
-            <input id="nome" type="text" aria-labelledby="nome" placeholder="Digite seu nome" class="input">
-            <label for="email" class="label">E-mail</label>
-            <input id="email" type="email" aria-labelledby="email" placeholder="Digite seu e-mail" class="input">
-            <label for="whatsapp" class="label">Whatsapp</label>
-            <input id="whatsapp" type="text" aria-labelledby="whatsapp" placeholder="Digite seu whatsapp" class="input">
-            <button class="btnSubmit">
+          <form class="form" @submit="teste">
+            <label for="" class="label">Nome</label>
+            <input
+              id="mce-FNAME"
+              v-model="name"
+              type="text"
+              aria-labelledby="nome"
+              placeholder="Digite seu nome"
+              class="input"
+            >
+            <label for="mce-EMAIL" class="label">E-mail</label>
+            <input
+              id="mce-EMAIL"
+              v-model="email"
+              type="email"
+              aria-labelledby="email"
+              placeholder="Digite seu e-mail"
+              class="input"
+            >
+            <label for="mce-PHONE" class="label">Whatsapp</label>
+            <input
+              id="mce-PHONE"
+              v-model="phone"
+              type="text"
+              aria-labelledby="whatsapp"
+              placeholder="Digite seu whatsapp"
+              class="input"
+            >
+            <button id="mc-embedded-subscribe" type="submit" class="btnSubmit">
               Iniciar minha jornada
             </button>
           </form>
@@ -39,8 +60,37 @@
 </template>
 
 <script>
-export default {
+import { jsonp } from 'vue-jsonp'
 
+export default {
+  data () {
+    return {
+      url: 'https://hotmail.us7.list-manage.com/subscribe/post?u=7695a95429c1243e974fd9e6e&amp;id=716944aa2a',
+      name: '',
+      email: '',
+      phone: ''
+    }
+  },
+  methods: {
+    teste (e) {
+      e.preventDefault()
+      const urlRequest = this.makeUrl()
+      jsonp(`${urlRequest}`, {
+        callbackQuery: 'c',
+        FNAME: this.name,
+        EMAIL: this.email,
+        PHONE: this.phone
+      }).then((response) => {
+        if (response.result) {
+          this.$router.push('obrigado')
+        }
+      })
+    },
+    makeUrl () {
+      const url = this.url.replace('/post?u=', '/post-json?u=')
+      return url
+    }
+  }
 }
 </script>
 
