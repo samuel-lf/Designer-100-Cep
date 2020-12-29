@@ -68,6 +68,9 @@
     & .contrast {
       color: #E5490C;
       font-weight: bold;
+      @media screen and (max-width: 500px) {
+        color: #f04d0d;
+      }
     }
   }
 

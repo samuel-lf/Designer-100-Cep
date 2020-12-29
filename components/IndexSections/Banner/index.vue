@@ -19,27 +19,27 @@
             <span class="contrast">jornada designer 100 cep</span>
           </p>
           <form class="form" @submit="sendNewsletter">
-            <label for="mce-FNAME" class="label">Nome</label>
+            <label for="nome" class="label">Nome</label>
             <input
-              id="mce-FNAME"
+              id="nome"
               v-model="name"
               type="text"
               aria-labelledby="nome"
               placeholder="Digite seu nome"
               class="input"
             >
-            <label for="mce-EMAIL" class="label">E-mail</label>
+            <label for="email" class="label">E-mail</label>
             <input
-              id="mce-EMAIL"
+              id="email"
               v-model="email"
               type="email"
               aria-labelledby="email"
               placeholder="Digite seu e-mail"
               class="input"
             >
-            <label for="mce-PHONE" class="label">Whatsapp</label>
+            <label for="whatsapp" class="label">Whatsapp</label>
             <input
-              id="mce-PHONE"
+              id="whatsapp"
               v-model="phone"
               v-mask="'(##)#########'"
               type="text"
