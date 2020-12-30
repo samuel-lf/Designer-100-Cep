@@ -4,6 +4,21 @@
   @media screen and (max-width:360px){
     height: 130vh
   }
+  @media screen and (max-height:565px){
+    height: 150vh
+  }
+  @media screen and (max-height:550px){
+    height: 180vh
+  }
+  @media screen and (max-height:415px){
+    height: 200vh
+  }
+  @media screen and (max-height:365px){
+    height: 240vh
+  }
+  @media screen and (max-height:310px){
+    height: 260vh
+  }
 }
 
 .containerBlocks{
