@@ -4,7 +4,7 @@
       <Logo class="logo" />
     </div>
     <p class="copyright">
-      Willian Leite | Todos os direitos reservados. | CNPJ 00.000.000/0000-00
+      Willian Leite | Todos os direitos reservados.
     </p>
   </footer>
 </template>
